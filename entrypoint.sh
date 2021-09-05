@@ -2,7 +2,8 @@
 
 set -e
 
-git fetch --tags
+git fetch --tags --force
+
 # This suppress an error occurred when the repository is a complete one.
 git fetch --prune --unshallow || true
 
